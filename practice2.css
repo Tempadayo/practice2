@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+*{
+  box-sizing:border-box;
+}
+
+/* CSSのリセット（消さないでください） */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ここからCSSを書いていきましょう */
+.top-wrapper{
+  background-image:url(https://prog-8.com/images/html/advanced/top.png);
+  background-size:cover;
+  padding:180px 0 100px 0;
+  text-align:center;
+}
+.main-wrapper{
+  width:100%;
+  margin:0 auto;
+  max-width:1170px;
+}
+.main-wrapper h1{
+  font-size:45px;
+  letter-spacing:5px;
+  color:white;
+  opacity:0.7;
+}
+
+.sub{
+  color:white;
+  opacity:0.7;
+}
+.btn{
+  padding:8px 24px;
+  border-radius:4px;
+  color:white;
+  display:inline-block;
+
+}
+.btn:hover{
+  opacity:1;
+}
+.icon{
+  padding-top:30px;
+}
+.icon p{
+  margin:15px 0;
+  opacity:0.7;
+}
+.regi{
+  background:#239b76;
+  opacity:0.8;
+}
+.facebook{
+  background:#3b5998;
+  opacity:0.8;
+  margin-right:10px;
+}
+.twitter{
+  background:#55acee;
+  opacity:0.8;
+}
+.fa{
+  margin-right:5px;
+}
+header{
+  background:rgba(34, 49, 52, 0.9);
+  color:white;
+  height:65px;
+  position:fixed;
+  z-index:10;
+  width:100%;
+}
+header a{
+  color:white;
+}
+header img{
+  width:124px;
+  padding:20px 0;
+}
+.log{
+  background:rgba(255, 255, 255, 0.3);
+  float:right;
+  padding:20px 25px;
+}
+.log:hover{
+  transition:all 0.5s;
+}
+.iconimg {
+  text-align:center;
+}
+.iconimg ul{
+  display:flex;
+}
+
+.icon-wrapper{
+  background:#f7f7f7;
+  height:580px;
+}
+.iconimg h2{
+  color:#5f5d60;
+  font-weight:normal;
+  padding:80px 0 50px 0;
+}
+.main-icon p{
+  position:absolute;
+  top:90px;
+  width:100%;
+  color:white;
+}
+
+li{
+  width:25%;
+  height:90px;
+  position:relative;
+}
+.text{
+  color:#b3aeb5;
+  width:80%;
+  font-size:13px;
+  display:inline-block;
+  padding-top:15px;
+}
+.message{
+  text-align:center;
+  padding:80px 0;
+}
+.message h2{
+  font-weight:normal;
+  color:#5f5d60;
+}
+.message h3{
+  padding-bottom:50px;
+  color:#5f5d60;
+}
+.stich{
+  position:relative;
+}
+.vtn{
+  background:#5dca88;
+  opacity:0.8;
+  padding:15px 40px;
+  color:white;
+  box-shadow: 0 7px #1a7940 ;
+}
+.vtn:hover{
+  opacity:1;
+}
+.vtn:active{
+  box-shadow:none;
+  position:relative;
+  top:7px;
+}
+footer{
+  color:#b3aeb5;
+  border-top:1px solid #eee;
+  padding:30px 0;
+}
+footer img{
+  width:124px;
+}
+footer p{
+  font-size:12px;
+}
+
+@media(max-width:1000px){
+li{
+  width:50%;
+  margin-bottom:50px;
+}
+.main-wrapper h1{
+  font-size:32px;
+}
+.iconimg h2{
+  font-size:20px
+}
+}
+
+@media(max-width:670px){
+li{
+  width:100%;
+}
+footer{
+  text-align:center;
+}
+.btn{
+  width:100%;
+}
+.facebook{
+  margin-bottom:10px;
+}
+.top-wrapper{
+  text-align:left;
+  padding-top:130px;
+}
+.top-wrapper h1{
+  font-size:24px;
+}
+.iconimg h2{
+  font-size:14px;
+}
+}
